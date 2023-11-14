@@ -1,7 +1,7 @@
 @extends('frontend.layouts.app')
-@section('page_title','About us')
-@section('meta_keywords','About us')
-@section('meta_description', 'About us')
+@section('page_title',CustomHelper::getSeoTemplates('about-us'))
+@section('meta_keywords',CustomHelper::getSeoTemplates('about-us'))
+@section('meta_description', CustomHelper::getSeoTemplates('about-us'))
 @section('container')
 
 @include('frontend.pages.banner', ['title' => 'About us'])

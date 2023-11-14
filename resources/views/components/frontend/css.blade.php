@@ -28,5 +28,5 @@
 	<link rel="stylesheet" href="{{ asset('assets/css/theme-dark.css') }}">
 
 	<link rel="icon" type="image/png" href="{{ asset('assets/images/favicon.png') }}">
-	<title>Digi Softron Technology  @yield('page_title')</title>
+	<title>@yield('page_title')</title>
 </head>

@@ -1,11 +1,11 @@
 @extends('frontend.layouts.app')
-@section('page_title','About us')
-@section('meta_keywords','About us')
-@section('meta_description', 'About us')
+@section('page_title',CustomHelper::getSeoTemplates('web-development'))
+@section('meta_keywords',CustomHelper::getSeoTemplates('web-development'))
+@section('meta_description', CustomHelper::getSeoTemplates('web-development'))
 @section('container')
 <style type="text/css">
-p{font-size: 18px}
-h1{font-size: 25px;color: #080337}	
+p{font-size: 20px; font-family: "Times New Roman", Times, serif;}
+h1{font-size: 25px;color: #080337; font-family: "Times New Roman", Times, serif;}	
 
 ol li {font-size: 18px}
 </style>

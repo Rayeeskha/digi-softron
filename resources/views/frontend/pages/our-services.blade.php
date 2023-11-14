@@ -1,7 +1,7 @@
 @extends('frontend.layouts.app')
-@section('page_title','Our Services')
-@section('meta_keywords','Our Services')
-@section('meta_description', 'Our Services')
+@section('page_title',CustomHelper::getSeoTemplates('our-services'))
+@section('meta_keywords',CustomHelper::getSeoTemplates('our-services'))
+@section('meta_description', CustomHelper::getSeoTemplates('our-services'))
 @section('container')
 
 <!-- Our services -->

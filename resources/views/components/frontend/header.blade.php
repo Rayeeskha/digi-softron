@@ -121,8 +121,9 @@
                          Web Development
                          </a>
                       </li>
+                      
                       <li class="nav-item">
-                         <a href="#!" class="nav-link">
+                         <a href="{{ route('page', 'application-development-company') }}" class="nav-link">
                          App Development
                          </a>
                       </li>
@@ -132,7 +133,7 @@
                          </a>
                       </li>
                       <li class="nav-item">
-                         <a href="#!" class="nav-link">
+                         <a href="{{ route('page', 'digital-marketing-company') }}" class="nav-link">
                          Digital Marketing
                          </a>
                       </li>
