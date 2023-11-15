@@ -7,10 +7,13 @@ use Illuminate\Http\Request;
 use App\Http\Requests\BlogRequest;
 use App\Models\Blog;
 use Illuminate\Support\Str;
+use App\Traits\UploadFile;
 use DataTables;
 use Auth;
+
 class BlogController extends Controller
 {
+    use UploadFile;
     public function index(Request $request){
     	if ($request->ajax()) {
             $data = Blog::select('id','title','url','meta_keyword','meta_description','status','image','created_at',\DB::raw('@rownum  := @rownum  + 1 AS DT_RowIndex'))->orderBy('id', 'DESC');
@@ -51,7 +54,7 @@ class BlogController extends Controller
             $id = $request->id;
 
             if ($request->hasfile('image')) {
-                $input['image'] = $this->uploadImage($request->file('image'), 'uploads/images/blogs', 'blog', ['id' => $id ], 'image');                
+                $input['image'] = $this->uploadImage($request->file('image'), 'uploads/images/blogs', 'blogs', ['id' => $id ], 'image');                
             }
 
             Blog::updateOrCreate(['id' => $id], $input);
