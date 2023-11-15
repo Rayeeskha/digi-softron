@@ -3,6 +3,7 @@ namespace App\Helpers;
 use Illuminate\Support\Facades\Hash;
 use App\Models\Projectype;
 use App\Models\Project;
+use App\Models\Blog;
 use DB;
 use Auth;
 
@@ -31,4 +32,9 @@ class CustomHelper{
         }
         return false;
     }
+
+    static function getBlogs(){
+        return Blog::latest()->take(4)->get();
+    }
+
 }
