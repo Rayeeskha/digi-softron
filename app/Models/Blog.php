@@ -11,7 +11,7 @@ class Blog extends Model
 {
     use HasFactory, SoftDeletes;
 
-    protected $table = "blog";
+    protected $table = "blogs";
 
     protected $guarded = [];
 
