@@ -7,7 +7,7 @@
     <div class="row pt-45 justify-content-center">
       @foreach(CustomHelper::getBlogs() as $blog)
        <div class="col-lg-4 col-md-6">
-          <div class="blog-item">
+          <div class="blog-item" style="height: 400px">
              <div class="blog-img3">
                 <a href="javascript:void(0)">
                 <img src="{{ asset($blog->image) }}" alt="Blog Images">

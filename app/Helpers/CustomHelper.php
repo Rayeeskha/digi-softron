@@ -34,7 +34,7 @@ class CustomHelper{
     }
 
     static function getBlogs(){
-        return Blog::latest()->take(4)->get();
+        return Blog::latest()->take(3)->get();
     }
 
 }
