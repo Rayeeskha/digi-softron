@@ -56,6 +56,7 @@ class BlogController extends Controller
             if ($request->hasfile('image')) {
                 $input['image'] = $this->uploadImage($request->file('image'), 'uploads/images/blogs', 'blogs', ['id' => $id ], 'image');                
             }
+            $input['title'] = $request->title;
 
             Blog::updateOrCreate(['id' => $id], $input);
 

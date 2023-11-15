@@ -25,6 +25,7 @@ class CustomHelper{
             'our-services' => 'Our Services',
             'web-development' => 'Best web design company in Lucknow, Affordable web development in Lucknow, Top website designers Lucknow, Custom website development Lucknow, Top-rated web development firm in Lucknow, Experienced web development services Lucknow, Lucknow top web development agency, Expert website developers Lucknow, Reliable web design agency in Lucknow, Professional web development company Lucknow',
             'software-dev' => 'Software development, professional services, India, Strong Webtech, Lucknow, custom solutions, latest technologies, expert developers, outstanding results, business growth.',
+            'blogs' => 'Digi Softron Technology Blogs',
         ];
         $slug = trim($page);
         if(array_key_exists($slug, $heading)){
