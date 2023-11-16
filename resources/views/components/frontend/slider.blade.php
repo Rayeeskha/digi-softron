@@ -4,7 +4,7 @@
          <div class="col-lg-6">
             <div class="banner-five-content">
                <span>DIGI SOFTRON TECHNOLOGY & IT SOLUTIONS</span>
-               <h1>It Solutions , <b>Digital</b> Technology & Services All Around the World</h1>
+               <h1>IT Solutions , <b>Digital</b> Technology & Services All Around the World</h1>
                <p>
                   Empower your business with our cutting-edge Technology & IT Solutions. Tailored strategies, innovation, and efficiency converge for success in the ever-evolving digital landscape
                </p>
