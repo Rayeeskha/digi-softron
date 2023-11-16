@@ -14,10 +14,10 @@ class FrontendController extends Controller
 
     public function page($page){
     	$data = [];
-    	if ($page = 'blogs') {
+    	if ($page == 'blogs') {
     		$data = Blog::latest()->wherestatus(1)->paginate(6);
     	}
-    	return view('frontend.pages.'.$page, compact('data'));
+        return view('frontend.pages.'.$page, compact('data'));
     }
 
     public function blogDetail($url){

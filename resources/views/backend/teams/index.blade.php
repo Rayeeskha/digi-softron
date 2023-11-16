@@ -2,12 +2,12 @@
 <div class="row">
     <div class="col-12">
         <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-            <h4 class="mb-sm-0">Digi Softron Projects</h4>
+            <h4 class="mb-sm-0">Digi Softron Teams</h4>
 
             <div class="page-title-right">
                 <ol class="breadcrumb m-0">
-                    <li class="breadcrumb-item"><a href="javascript: void(0);">Projects</a></li>
-                    <li class="breadcrumb-item active">Digi Softron</li>
+                    <li class="breadcrumb-item"><a href="javascript: void(0);">Digi Softron</a></li>
+                    <li class="breadcrumb-item active">Teams</li>
                 </ol>
             </div>
 
@@ -26,7 +26,7 @@
                   </div>  
                   <div class="col-md-6"></div>                
                   <div class="col-md-3">
-                    <a href="javascript:void(0)" class="btn btn-primary btn-animation waves-effect waves-light float-left addProject">Add Project
+                    <a href="javascript:void(0)" class="btn btn-primary btn-animation waves-effect waves-light float-left addTeams">Add Teams
                     </a>
                   </div>
                </div>
@@ -37,10 +37,10 @@
                      <thead>
                         <tr>
                            <th data-ordering="false">SR No.</th>
-                           <th data-ordering="false">Project type</th>
-                           <th data-ordering="false">Project Name</th>
-                           <th data-ordering="false">Description</th>
-                           <th data-ordering="false">Image</th>
+                           <th data-ordering="false">Name</th>
+                           <th data-ordering="false">Designation</th>
+                           <th data-ordering="false">Profile</th>
+                           <th data-ordering="false">profile url</th>
                            <th>Status</th>
                            <th>created at</th>
                            <th>Action</th>
@@ -57,44 +57,36 @@
 
 
 
-<div class="modal fade zoomIn" id="projectModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade zoomIn" id="teamModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered modal-md">
      <div class="modal-content border-0">
         <div class="modal-header p-3 bg-soft-info">
            <h5 class="modal-title" id="exampleModalLabel"><span class="las la-user-plus"></span>&nbsp;</h5>
            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" id="close-modal"></button>
         </div>
-        <form class="validateForm" action="{{ route('admin.project.store') }}" method="post" enctype="multipart/form-data">
+        <form class="validateForm" action="{{ route('admin.teams.store') }}" method="post" enctype="multipart/form-data">
           @csrf
-          <input type="hidden" name="id" value="" class="project_id">
+          <input type="hidden" name="id" value="" class="team_id">
            <div class="modal-body">
               <div class="row">
                 <div class="col-md-12">
-                  <label>Project Type</label>
-                  <select name="projectype_id" class="form-control projectypes">
-                    <option value="1">Select one</option>
-                  </select>
-                  <span class="text-danger Errprojectype_id"></span>
-                </div>
-                <div class="col-md-12">
-                  <label>Title</label>
-                  <input type="text" name="project_name" class="form-control project_name">
+                  <label>Name</label>
+                  <input type="text" name="name" class="form-control name">
 
-                  <span class="text-danger Errproject_name"></span>
+                  <span class="text-danger Errname"></span>
                 </div>
                 <div class="col-md-12">
-                  <label>URL</label>
-                  <input type="text" name="url" class="form-control url">
-                  <span class="text-danger Errurl"></span>
+                  <label>Designation</label>
+                  <input type="text" name="designation" class="form-control designation">
+                  <span class="text-danger Errdesignation"></span>
                 </div>
                 <div class="col-md-12">
-                  <label>Description</label>
-                  <textarea name="description" class="form-control description"></textarea>
-
-                  <span class="text-danger Errdescription"></span>
+                  <label>Profile Url</label>
+                  <input type="text" name="profile_url" class="form-control profile_url">
+                  <span class="text-danger Errprofile_url"></span>
                 </div>
                 <div class="col-md-12">
-                  <label>Project Image</label>
+                  <label>Image</label>
                   <input type="file" name="image" class="form-control image">
                   <span class="text-danger Errimage"></span>
                   <div class="preview_image_div" style="display: none;">
@@ -124,33 +116,29 @@
        processing: true,
        serverSide: true,
         ajax: {
-          "url": "{{ route('admin.project.index') }}",
+          "url": "{{ route('admin.teams.index') }}",
           data: function (d) {
             d.project_type = $('#project_type_id').val()
           }
         },
        columns: [
          {data: 'DT_RowIndex', orderable: false,searchable: false},
-         {data: 'projectype_id', name: 'projectype_id'},
-         {data: 'project_name', name: 'project_name'},
-         {data: 'description', name: 'description'},
+         {data: 'name', name: 'name'},
+         {data: 'designation', name: 'designation'},
          {data: 'image', name: 'image'},
+         {data: 'profile_url', name: 'profile_url'},
          {data: 'status', name: 'status'},
          {data: 'created_at', name: 'created_at'},
          {data: 'action', name: 'action'},        
        ],
       createdRow: function( row, data, dataIndex ) {
-        $(row).attr('row-id',data.id+'-projects');
-        $(row).attr('row-project_id',data.id);
-        $(row).attr('row-projectype_id',data.projectype_id);
-        $(row).attr('row-project_name',data.project_name);
-        $(row).attr('row-url',data.url);
-        $(row).attr('row-description',data.description);
+        $(row).attr('row-id',data.id+'-teams');
+        $(row).attr('row-team_id',data.id);
+        $(row).attr('row-name',data.name);
+        $(row).attr('row-designation',data.designation);
         $(row).attr('row-image',data.image);
+        $(row).attr('row-profile_url',data.profile_url);
       }
-    });
-    $('#project_type_id').change(function(){
-      table.draw();
     });
   });
 </script>

@@ -76,7 +76,30 @@ function projectType(typeId=''){
   });
 }
 
+//Add Teams
+$('.addTeams').click(function() {
+  $('.text-danger').html('');
+  $('.image_show').html('');
+  $('.validateForm')[0].reset();
+  $('.modal-title').html('Add Teams');
+  $('#teamModal').modal('show');
+});
 
+
+
+$(document).on('click','.editTeam',function(){
+  $('.text-danger').html('');
+  $('.validateForm')[0].reset();
+  $('.modal-title').html('Edit Team');
+  let selector = $(this);
+  let tr  = selector.closest('tr');
+  $('.team_id').val(tr.attr('row-team_id'));
+  $('.name').val(tr.attr('row-name'));
+  $('.designation').val(tr.attr('row-designation'));
+  $('.profile_url').val(tr.attr('row-profile_url'));
+  $('.image_show').html(tr.attr('row-image'));
+  $('#teamModal').modal('show');
+});
 
 
 

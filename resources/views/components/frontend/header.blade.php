@@ -93,8 +93,8 @@
                          </a>
                       </li>
                       <li class="nav-item">
-                         <a href="#!" class="nav-link">
-                         Careers
+                         <a href="{{ route('page', 'career') }}" class="nav-link">
+                         Career
                          </a>
                       </li>
                       <li class="nav-item">

@@ -17,7 +17,7 @@
           <div class="col-lg-4 col-md-6">
             <div class="blog-card" style="height: 450px">
               <div class="blog-img">
-                <a href="blog-details.html">
+                <a href="{{ route('blog_detail',$blog->url) }}">
                 <img src="{{ asset($blog->image) }}" alt="Blog Images">
                 </a>
                 <div class="blog-tag">
@@ -28,7 +28,7 @@
               <div class="content">
                 <ul>
                   <li>
-                    <a href="index.html"><i class="bx bxs-user"></i> Rayees Khan</a>
+                    <a href="javascript:void(0)"><i class="bx bxs-user"></i> Rayees Khan</a>
                   </li>
                 </ul>
                 <h3>
