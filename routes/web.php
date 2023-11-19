@@ -10,7 +10,10 @@ Route::match(['POST','GET'],'{page}', [FrontendController::class, 'page'])->name
 
 Route::match(['POST','GET'],'blog/{page}', [FrontendController::class, 'blogDetail'])->name('blog_detail');
 
+Route::match(['POST','GET'],'front/contact-us', [FrontendController::class, 'contactUs'])->name('contact_us');
 
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+

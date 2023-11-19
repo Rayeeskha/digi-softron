@@ -398,4 +398,9 @@
     </div>
   </div>
 </section>
+
+
+<x-frontend.contact-us />
+<br><br><br>
+
 @endsection

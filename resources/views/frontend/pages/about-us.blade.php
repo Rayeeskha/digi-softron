@@ -124,4 +124,6 @@
  </div>
 </div>
 
+<x-frontend.contact-us />
+
 @endsection

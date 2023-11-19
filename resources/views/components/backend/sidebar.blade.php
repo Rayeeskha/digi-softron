@@ -54,6 +54,11 @@
             </a>
         </li>
         <li class="nav-item">
+            <a class="nav-link menu-link" href="{{ route('admin.contact-us.index') }}">
+                <i class="ri-honour-line"></i> <span data-key="t-widgets">Contat us</span>
+            </a>
+        </li>
+        <li class="nav-item">
             <a class="nav-link menu-link" href="#!">
                 <i class="ri-honour-line"></i> <span data-key="t-widgets">Client Review</span>
             </a>

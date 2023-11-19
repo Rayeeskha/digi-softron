@@ -7,4 +7,6 @@
 <!-- Our services -->
 <x-frontend.front-service />
 
+<x-frontend.contact-us />
+
 @endsection

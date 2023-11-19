@@ -27,8 +27,10 @@ class CommonController extends Controller
                     break; 
                 case "teams":
                     $data = Models\Team::find($id);
-                    break;     
-                    
+                    break;
+                case "contactuses":
+                    $data = Models\Contactus::find($id);
+                    break;   
             }
             if(!is_null($data)){
                 if ($chek_foreign > 0) {
@@ -63,8 +65,7 @@ class CommonController extends Controller
                     break;
                 case "teams":
                     $data = Models\Team::find($id);
-                    break;     
-                    
+                    break;
             }
             if(!is_null($data)){
                 $data->status = $data->status == 1 ? 0 : 1;

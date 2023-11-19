@@ -207,4 +207,8 @@
     </div>
   </div>
 </section>
+
+
+<x-frontend.contact-us />
+
 @endsection

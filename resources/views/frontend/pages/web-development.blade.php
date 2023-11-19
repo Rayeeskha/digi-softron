@@ -389,6 +389,9 @@ ol li {font-size: 18px}
 	       </div>
 	    </div>
 	</div>
+	<x-frontend.contact-us />
 </div>
+
+
 
 @endsection
