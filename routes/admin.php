@@ -11,6 +11,7 @@ Route::middleware(['auth', 'verified'])->group(function () {
         'project' => \App\Http\Controllers\Backend\ProjectController::class,
         'teams' => \App\Http\Controllers\Backend\TeamController::class,
         'contact-us' => \App\Http\Controllers\Backend\ContactusController::class,
+        'careers' => \App\Http\Controllers\Backend\CareerController::class,
     ]);
 
    	Route::match(['POST','GET'],'get-project-type', [\App\Http\Controllers\Backend\ProjectController::class, 'getProjectType']);

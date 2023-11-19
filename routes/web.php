@@ -12,6 +12,8 @@ Route::match(['POST','GET'],'blog/{page}', [FrontendController::class, 'blogDeta
 
 Route::match(['POST','GET'],'front/contact-us', [FrontendController::class, 'contactUs'])->name('contact_us');
 
+Route::match(['POST','GET'],'front/career', [FrontendController::class, 'career'])->name('career');
+
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

@@ -153,40 +153,73 @@
     </div>
   </div>
 </section>
-
+<br><br>
 <section class="about-wrap style-1">
-  <div class="container">
+  <div class="container ">
     <div class="row">
       <div class="col-md-4">
-        <img src="{{ asset('assets/images/blog/success-career.jpg') }}">
+        <img src="{{ asset('assets/images/blog/success-career.jpg') }}" width="100%" height="100%">
       </div>
-      <div class="col-md-8">
-        <form>
-          <div class="row">
-            <div class="col-md-6">
-              <label>Name</label>
-              <input type="text" name="name" class="form-control">
-            </div>
-            <div class="col-md-6">
-              <label>Email</label>
-               <input type="text" name="email" class="form-control">
-            </div>
-            <div class="col-md-6">
-              <label>Phone</label>
-               <input type="text" name="phone" class="form-control">
-            </div>
-            <div class="col-md-6">
-              <label>Designation</label>
-               <input type="text" name="designation" class="form-control">
-            </div>
-            <div class="col-md-12">
-              <label>CV</label>
-               <input type="file" name="designation" class="form-control">
-            </div>
-            <br><br><br>
-            <button class="btn btn-primary">Apply</button>
+      <div class="col-md-8 ">
+        <div class="contact-form">
+            <form class="validateForm" action="{{ route('career') }}" method="post" enctype="multipart/form-data" >
+                <div class="row">
+                   <div class="col-lg-6">
+                      <div class="form-group">
+                         <label>Your Name <span>*</span></label>
+                         <input type="text" name="name" id="name" class="form-control"  placeholder="Name">
+                         <span class="text-danger Errname"></span>
+                      </div>
+                   </div>
+                   <div class="col-lg-6">
+                      <div class="form-group">
+                         <label>Your Email <span></span></label>
+                         <input type="email" name="email" id="email" class="form-control" placeholder="Email (Optional)">
+                      </div>
+                   </div>
+                   <div class="col-lg-6">
+                      <div class="form-group">
+                         <label>Phone Number <span>*</span></label>
+                         <input type="text" name="number"  placeholder="Phone Number" class="form-control">
+                         <span class="text-danger Errnumber"></span>
+                      </div>
+                   </div>
+                   <div class="col-lg-6">
+                      <div class="form-group">
+                         <label>Select Position <span>*</span></label>
+                         <select name="position" class="form-control">
+                            <option value>Select Option</option>
+                            <option>Web Developer</option>
+                            <option>Digital Marketing</option>
+                            <option>Graphic Designer</option>
+                            <option>Other</option>
+                         </select>
+                      </div>
+                      <span class="text-danger Errposition"></span>
+                   </div>
+                   <div class="col-lg-12">
+                     <label>Upload CV</label>
+                     <input type="file" name="resume" class="form-control">
+                     <span class="text-danger Errresume"></span>
+                   </div>
+                   <div class="col-lg-12 col-md-12">
+                      <div class="form-group">
+                         <label>Your Message <span>*</span></label>
+                         <textarea name="message" class="form-control" id="message" cols="30" rows="5"  placeholder="Your Message"></textarea>
+                         <span class="text-danger Errmessage"></span>
+                      </div>
+                   </div>
+                  <div class="col-lg-12 col-md-12 text-center">
+                    <x-backend.preloader />
+                      <button type="submit" class="default-btn btn-bg-two border-radius-50">
+                      Send Message <i class="bx bx-chevron-right"></i>
+                      </button>
+                      <div id="msgSubmit" class="h3 text-center hidden"></div>
+                      <div class="clearfix"></div>
+                   </div>
+                </div>
+            </form>
           </div>
-        </form>
       </div>
     </div>
   </div>

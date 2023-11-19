@@ -50,21 +50,16 @@
         </li>
         <li class="nav-item">
             <a class="nav-link menu-link " href="{{ route('admin.teams.index') }}">
-                <i class="ri-compasses-2-line"></i> <span data-key="t-widgets">Teams</span>
+                <i class="ri-account-circle-line"></i> <span data-key="t-widgets">Teams</span>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link menu-link" href="{{ route('admin.careers.index') }}">
+                <i class="ri-rocket-line"></i> <span data-key="t-widgets">Careers</span>
             </a>
         </li>
         <li class="nav-item">
             <a class="nav-link menu-link" href="{{ route('admin.contact-us.index') }}">
-                <i class="ri-honour-line"></i> <span data-key="t-widgets">Contat us</span>
-            </a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link menu-link" href="#!">
-                <i class="ri-honour-line"></i> <span data-key="t-widgets">Client Review</span>
-            </a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link menu-link" href="#!">
                 <i class="ri-share-line"></i> <span data-key="t-widgets">Need help</span>
             </a>
         </li>
