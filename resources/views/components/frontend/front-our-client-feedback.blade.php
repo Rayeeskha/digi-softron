@@ -10,11 +10,10 @@
              <img src="assets/images/clients-img/clients-img1.jpg" alt="Images">
              <i class="bx bxs-quote-alt-left"></i>
              <h3>Jonthon Martin</h3>
-             <span>App Developer</span>
+             <span>Client</span>
           </div>
           <p>
-             “Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis.
-             sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi loren accumsan ipsum velit.”
+             “It is a pleasure working with Digi softron. He is extremely knowledgeable, business savvy, and positive. His approach to challenges and opportunities is innovative. He is highly productive and consistently delivers as promised. And to top it all off, he is gracious, kind, and insightful.”
           </p>
        </div>
        <div class="clients-content">
@@ -22,23 +21,21 @@
              <img src="assets/images/clients-img/clients-img2.jpg" alt="Images">
              <i class="bx bxs-quote-alt-left"></i>
              <h3>Alin Decros</h3>
-             <span>Graphic Designer</span>
+             <span>Client</span>
           </div>
           <p>
-             “Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis.
-             sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi loren accumsan ipsum velit.”
+             “It is a pleasure working with Digi softron. He is extremely knowledgeable, business savvy, and positive. His approach to challenges and opportunities is innovative. He is highly productive and consistently delivers as promised. And to top it all off, he is gracious, kind, and insightful.”
           </p>
        </div>
        <div class="clients-content">
           <div class="content">
              <img src="assets/images/clients-img/clients-img3.jpg" alt="Images">
              <i class="bx bxs-quote-alt-left"></i>
-             <h3>Elen Musk</h3>
-             <span>Web Developer</span>
+             <h3>Barry Tanner</h3>
+             <span>Client</span>
           </div>
           <p>
-             “Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis.
-             sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi loren accumsan ipsum velit.”
+             “It is a pleasure working with Digi softron. He is extremely knowledgeable, business savvy, and positive. His approach to challenges and opportunities is innovative. He is highly productive and consistently delivers as promised. And to top it all off, he is gracious, kind, and insightful.”
           </p>
        </div>
     </div>
