@@ -390,6 +390,7 @@ ol li {font-size: 18px}
 	    </div>
 	</div>
 	<x-frontend.contact-us />
+	<br><br>
 </div>
 
 
