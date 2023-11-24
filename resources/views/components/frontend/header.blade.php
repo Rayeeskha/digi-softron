@@ -97,7 +97,7 @@
                          Career
                          </a>
                       </li>
-                      <li class="nav-item">
+                      {{-- <li class="nav-item">
                          <a href="#!" class="nav-link">
                          Certificate
                          </a>
@@ -106,7 +106,7 @@
                          <a href="#!" class="nav-link">
                          Event Gallery
                          </a>
-                      </li>
+                      </li> --}}
                    </ul>
                 </li>
                 
@@ -146,23 +146,23 @@
                    </a>
                    <ul class="dropdown-menu">
                       <li class="nav-item">
-                         <a href="#!" class="nav-link">
-                         Business Application
+                         <a href="https://erp.digisoftron.com/" class="nav-link" target="_blank">
+                         School ERP
                          </a>
                       </li>
                       <li class="nav-item">
-                         <a href="#!" class="nav-link">
+                         <a href="https://ak-ecom.helpinghands4needy.org/" class="nav-link" target="_blank">
                          Retail & E-commerce
                          </a>
                       </li>
                       <li class="nav-item">
-                         <a href="#!" class="nav-link">
+                         <a href="https://services.msgroupoftravels.com/" class="nav-link" target="_blank">
                          Corporate Website
                          </a>
                       </li>
                       <li class="nav-item">
-                         <a href="#!" class="nav-link">
-                         Mobile Application
+                         <a href="https://quiz.msgroupoftravels.com/" class="nav-link" target="_blank">
+                         Online Quiz System
                          </a>
                       </li>
                    </ul>

@@ -22,8 +22,8 @@
           <img src="{{ asset('assets/images/clients/agi.png') }}" class="brand-logo-two" alt="Images" width="100" height="70">
        </div>
        <div class="brand-item">
-          <img src="assets/images/brand-logo/brand-logo3.png" class="brand-logo-one" alt="Images">
-          <img src="assets/images/brand-logo/brand-style3.png" class="brand-logo-two" alt="Images">
+          <img src="{{ asset('assets/images/clients/service_zone.png') }}" class="brand-logo-one" alt="Images">
+          <img src="{{ asset('assets/images/clients/service_zone.png') }}" class="brand-logo-two" alt="Images">
        </div>
     </div>
  </div>
