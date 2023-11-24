@@ -46,25 +46,25 @@
                   <h3>Services</h3>
                   <ul class="footer-list">
                      <li>
-                        <a href="{{ route('page', 'web-development') }}" target="_blank">
+                        <a href="{{ route('page', 'web-development') }}" >
                         <i class="bx bx-chevron-right"></i>
                         Web Development
                         </a>
                      </li>
                      <li>
-                        <a href="{{ route('page', 'application-development-company') }}" target="_blank">
+                        <a href="{{ route('page', 'application-development-company') }}" >
                         <i class="bx bx-chevron-right"></i>
                         App Development
                         </a>
                      </li>
                      <li>
-                        <a href="{{ route('page', 'software-development-company') }}" target="_blank">
+                        <a href="{{ route('page', 'software-development-company') }}" >
                         <i class="bx bx-chevron-right"></i>
                         Software Dev
                         </a>
                      </li>
                      <li>
-                        <a href="{{ route('page', 'digital-marketing-company') }}" target="_blank">
+                        <a href="{{ route('page', 'digital-marketing-company') }}" >
                         <i class="bx bx-chevron-right"></i>
                         Digital Marketing
                         </a>
