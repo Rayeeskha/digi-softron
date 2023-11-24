@@ -9,7 +9,7 @@
        <div class="col-lg-4 col-md-6">
           <div class="blog-item" style="height: 400px">
              <div class="blog-img3">
-                <a href="javascript:void(0)">
+                <a href="{{ route('blog_detail',$blog->url) }}">
                 <img src="{{ asset($blog->image) }}" alt="Blog Images">
                 </a>
                 <div class="blog-tag">
@@ -19,10 +19,10 @@
              </div>
              <div class="content">
                 <h3>
-                   <a href="javascript:void(0)">{{ $blog->title }}</a>
+                   <a href="{{ route('blog_detail',$blog->url) }}">{{ $blog->title }}</a>
                 </h3>
                 <p>{{ $blog->meta_keyword }}</p>
-                <a href="javascript:void(0)" class="read-btn">Read More <i class="bx bx-chevron-right"></i></a>
+                <a href="{{ route('blog_detail',$blog->url) }}" class="read-btn">Read More <i class="bx bx-chevron-right"></i></a>
              </div>
           </div>
        </div>
