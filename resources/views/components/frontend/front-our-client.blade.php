@@ -25,6 +25,14 @@
           <img src="{{ asset('assets/images/clients/service_zone.png') }}" class="brand-logo-one" alt="Images">
           <img src="{{ asset('assets/images/clients/service_zone.png') }}" class="brand-logo-two" alt="Images">
        </div>
+       <div class="brand-item">
+          <img src="{{ asset('assets/images/clients/wadly.png') }}" class="brand-logo-one" alt="Images">
+          <img src="{{ asset('assets/images/clients/wadly.png') }}" class="brand-logo-two" alt="Images">
+       </div>
+       <div class="brand-item">
+          <img src="{{ asset('assets/images/clients/gareeb.png') }}" class="brand-logo-one" alt="Images">
+          <img src="{{ asset('assets/images/clients/gareeb.png') }}" class="brand-logo-two" alt="Images">
+       </div>
     </div>
  </div>
 </div>
